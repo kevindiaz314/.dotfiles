@@ -9,6 +9,6 @@ config.font_size = 15
 config.window_decorations = "RESIZE"
 
 -- Color scheme
-config.color_scheme = "Tokyo Night"
+config.color_scheme = 'Tokyo Night'
 
 return config
