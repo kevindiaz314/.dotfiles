@@ -13,7 +13,7 @@ config.window_decorations = "RESIZE"
 config.enable_tab_bar = false
 
 -- Color scheme
-config.color_scheme = 'Tokyo Night'
+config.color_scheme = 'Kanagawa (Gogh)'
 
 -- Opacity
 -- config.window_background_opacity = 0.2
