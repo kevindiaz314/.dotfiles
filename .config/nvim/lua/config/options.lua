@@ -1,5 +1,9 @@
 local opt = vim.opt 
 
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 opt.relativenumber = true
 opt.number = true
 
@@ -14,5 +18,7 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
+-- 24-bit color
 opt.termguicolors = true
-                
+
+               
