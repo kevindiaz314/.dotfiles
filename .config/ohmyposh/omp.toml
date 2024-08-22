@@ -56,7 +56,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
 
     [blocks.segments.properties]
       branch_icon = ' '
-      branch_max_length = 25
+      branch_max_length = 35
       fetch_status = true
       fetch_upstream_icon = true
 
@@ -165,13 +165,13 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   [tooltips.properties]
     display_default = true
 
-[transient_prompt]
-  template = '❯ '
-  background = 'transparent'
-  foreground = 'p:green'
-  Text = ''
-  Duration = 0
-  NameLength = 0
+# [transient_prompt]
+#   template = '❯ '
+#   background = 'transparent'
+#   foreground = 'p:green'
+#   Text = ''
+#   Duration = 0
+#   NameLength = 0
 
 [secondary_prompt]
   template = '<p:yellow,transparent></><,p:yellow> > </><p:yellow,transparent></> '
