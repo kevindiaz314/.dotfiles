@@ -1,18 +1,28 @@
 return {
     "stevearc/oil.nvim",
-    opts = {},
     dependencies = { { "echasnovski/mini.icons" } },
     config = function()
         require("oil").setup({
             view_options = {
                 show_hidden = true,
-                natural_order = true,
+                natural_order = false,
+                
+                -- This function defines what will never be shown, even when 'show_hidden' is set
                 is_always_hidden = function(name,_)
                     return name == '..'
                 end,
             },
+            -- Configuration for the floating window in oil.open_float
+            float = {
+                -- padding aroud the floating window
+                padding = 5,
+            },
+            keymaps = {
+                ["<esc>"] = "actions.close",
+            },
             delete_to_trash = true,
             skip_confirm_for_simple_edits = true,
+
         })
         
         -- Open parent directory in curren window
