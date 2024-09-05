@@ -18,7 +18,5 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
--- 24-bit color
-opt.termguicolors = true
-
-               
+-- use system clipboard as default register
+opt.clipboard:append("unnamedplus")              
