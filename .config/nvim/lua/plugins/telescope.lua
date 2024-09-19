@@ -4,15 +4,15 @@ return { "nvim-telescope/telescope.nvim",
     dependencies = {
         "nvim-lua/plenary.nvim",
         "nvim-telescope/telescope-file-browser.nvim",
-        { 'nvim-telescope/telescope-fzf-native.nvim', build = 'gmake' },
+        { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
         "nvim-tree/nvim-web-devicons",
     },
     config = function()
         -- To get fzf loaded and working with telescope, you need to call
         -- load_extension, somewhere after setup function:
+        require('telescope').load_extension('file_browser')
         require('telescope').load_extension('fzf')
 
-        require('telescope').load_extension('file_browser')
     end,
     keys = {
         { "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Lists files in your cwd" } },
