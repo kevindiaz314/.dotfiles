@@ -166,13 +166,13 @@ auto_upgrade = true
   [tooltips.properties]
     display_default = true
 
-# [transient_prompt]
-#   template = '❯ '
-#   background = 'transparent'
-#   foreground = 'p:green'
-#   Text = ''
-#   Duration = 0
-#   NameLength = 0
+[transient_prompt]
+  template = '❯ '
+  background = 'transparent'
+  foreground = 'p:green'
+  Text = ''
+  Duration = 0
+  NameLength = 0
 
 [secondary_prompt]
   template = '<p:yellow,transparent></><,p:yellow> > </><p:yellow,transparent></> '
