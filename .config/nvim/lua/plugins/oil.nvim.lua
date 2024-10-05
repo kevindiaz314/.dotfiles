@@ -16,6 +16,7 @@ return {
             float = {
                 -- padding aroud the floating window
                 padding = 5,
+                max_width = 75,
             },
             keymaps = {
                 ["<esc>"] = "actions.close",

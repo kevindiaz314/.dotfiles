@@ -19,4 +19,13 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- use system clipboard as default register
-opt.clipboard:append("unnamedplus")              
+-- opt.clipboard:append("unnamedplus")              
+
+opt.scrolloff = 10  -- Minimum number of screen lines to keep above and below the cursor
+opt.confirm = true -- Confirm to save changes before exiting modified buffer
+opt.cursorline = true -- Enable highlighting of the current line
+opt.formatoptions = "jqlnt"
+opt.splitbelow = true -- Split new windows below current
+opt.splitright = true -- Split new windows right of current
+opt.splitkeep = "screen"
+opt.smoothscroll = true
